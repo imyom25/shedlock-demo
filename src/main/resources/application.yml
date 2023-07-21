@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/shedlock_db
+    username: postgres
+    password: admin
+server:
+  port: 8182
+  jpa:
+    hibernate:
+      ddl-auto: none
+      show-sql: true
+  flyway:
+    locations: classpath:db/migration
+  h2:
+    console:
+      enabled: true
